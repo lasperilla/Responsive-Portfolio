@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/*restyling some basic elements that got reset with reset.css*/
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+
+/*header/navigation section*/
+
+.header {
+    height: 100px;
+    position: relative;
+    background: #FFFFFF;
+    border-color: #cccccc;
+    border-bottom-style: solid;
+    border-width: 3px;
+}
+
+.letterhead {
+    background: #4AAAA5;
+    color: #FFFFFF;
+    width: 425px;
+    height: 100%;
+    float: left;
+    position: absolute;
+    left: 50px;
+    bottom: 0px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.topmenu {
+    width: 500px;
+    padding: 5px;
+    float: left;
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+}
+
+.tmlink {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #4aaaa5;
+}
+
+
+/*not sure how to put | between about, portfolio, and contact links. using #tmcenter to add border on middle link for now*/
+
+
+/*fixed: restructured top menu links into list, changed properties to inline block to get them lined up horrizontally, 
+added border right to list items, made id for last list item to have no border right*/
+
+
+/*#tmcenter {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-left-color: #4AAAA5;
+    border-right-color: #4AAAA5;
+    border-width: 1px;
+}*/
+
+li {
+    border-right: 1px solid #DFDFDF;
+    display: inline-block;
+    float: left;
+}
+
+#lilast {
+    border-right-style: none;
+}
+
+
+/*footer section*/
+
+.footer {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #666666;
+    color: #A1A8B5;
+    text-align: center;
+    padding: 30px;
+    border-color: #4AAAA5;
+    border-top-style: solid;
+    border-width: 8px;
+}
+
+
+/*Main content / everything between header & footer*/
+
+.wrapper {
+    background-image: url("../../assets/images/background.png");
+    background-size: contain;
+    padding: 50px;
+    /*clear: both;*/
+    /*overflow: auto;*/
+    /*border-style: solid;*/
+    /*padding: 30px 30px 300px 30px;*/
+    /* weird overflow problem with body div. been fixing by adjusting bottom padding*/
+    /*problem was fixed. problem was due to index's position set to absolute*/
+}
+
+.maincontent {
+    background-color: #ffffff;
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: 2px;
+    line-height: 200%;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    width: 650px;
+    float: left;
+}
+
+.connect {
+    float: left;
+    width: 270px;
+    background-color: #ffffff;
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: 2px;
+    line-height: 200%;
+    color: #4aaaa5;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.snsicon {
+    margin: 20px;
+    border-top-style: solid;
+    border-top-color: #DFDFDF;
+    border-width: 3px;
+    padding-top: 30px;
+}
+
+.profilepic {
+    float: left;
+    margin: 0px 10px 10px 0px;
+    position: relative;
+    top: 10px;
+}
+
+.maincontenttitle {
+    padding: 10px 30px 10px 30px;
+    color: #4aaaa5;
+}
+
+.maincontentbody {
+    border-top-style: solid;
+    border-top-color: #DFDFDF;
+    border-width: 3px;
+    padding: 20px 0px 20px 0px;
+    /*margin used to make top border not span the full width of the containing div*/
+    margin: 0px 30px 0px 30px;
+    color: #777777;
+}
+
+.projecttitle {
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    position: absolute;
+    bottom: 5px;
+    height: 52px;
+    width: 250px;
+    background-color: #4AAAA5;
+}
+
+.projectdiv {
+    position: relative;
+    padding: 20px 0px 20px 0px;
+    height: 210px;
+    margin-right: 40px;
+    float: left;
+}
+
+.contactheader {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    font-weight: normal;
+    margin: 0px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-color: #dddddd;
+    border-width: 1px;
+    border-style: solid;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    border-color: #dddddd;
+    border-width: 1px;
+    border-style: solid;
+}
+
+input[type=submit] {
+    background-color: #4AAAA5;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    width: 120px;
+    padding: 10px;
+    border-style: none;
+}
+
+
+/*Misc.*/
+
+
+/*needed to get rid of random underlining between linked sns thumbnails*/
+
+.tdn {
+    text-decoration: none;
+}
+
+
+/*media queries*/
+
+/*@media screen and (max-width: 768px) {
+    body {
+        background-color: red;
+    }
+    .maincontent {
+        width: 90%;
+    }
+    .connect {
+        width: 90%;
+        margin: 20px 0px 0px 0px;
+    }
+    .letterhead {
+        width: 25%;
+    }
+}*/
+
+@media only screen and (max-width: 960px) {
+    body {
+        background-color: green;
+    }
+    .maincontent {
+        width: 55%;
+    }
+    .connect {
+        width: 35%;
+    }
+    .letterhead {
+        width: 25%;
+    }
+}
+
+
+/*just added because side contact menu was getting pushed down between 980-1060*/
+
+
+/*@media screen and (max-width: 1060px) {
+    .maincontent {
+        width: 55%;
+    }
+    .connect {
+        width: 35%;
+    }
+
+    .letterhead {
+        width: 25%;
+    }
+}*/
