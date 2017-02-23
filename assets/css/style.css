@@ -381,14 +381,14 @@ input[type=submit] {
         padding: 20px;
     }
     .maincontent {
-        width: 100%;
+        width: 80%;
     }
     .connect {
-        width: 100%;
+        width: 80%;
         margin: 20px 0px 0px 0px;
     }
     .letterhead {
-        width: 100%;
+        width: 80%;
         height: 70%;
         position: static;
     }
@@ -396,7 +396,7 @@ input[type=submit] {
         clear: left;
         float: left;
         position: static;
-        width: 100%
+        width: 80%
     }
     li {
         width: 33%;
@@ -412,5 +412,8 @@ input[type=submit] {
         font-size: 24px;
         height: 20%;
         line-height: 150%;
+    }
+    .footer {
+        width: 80%
     }
 }
