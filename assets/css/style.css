@@ -273,10 +273,35 @@ input[type=submit] {
 
 /*media queries*/
 
-/*@media screen and (max-width: 768px) {
-    body {
-        background-color: red;
+
+/*just added because side contact menu was getting pushed down between 980-1060*/
+@media only screen and (max-width: 1060px) {
+    .maincontent {
+        width: 55%;
     }
+    .connect {
+        width: 35%;
+    }
+    .letterhead {
+        width: 25%;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .maincontent {
+        width: 55%;
+    }
+    .connect {
+        width: 35%;
+    }
+    .letterhead {
+        width: 25%;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
     .maincontent {
         width: 90%;
     }
@@ -286,37 +311,32 @@ input[type=submit] {
     }
     .letterhead {
         width: 25%;
-    }
-}*/
-
-@media only screen and (max-width: 960px) {
-    body {
-        background-color: green;
-    }
-    .maincontent {
-        width: 55%;
-    }
-    .connect {
-        width: 35%;
-    }
-    .letterhead {
-        width: 25%;
+        font-size: 15px;
     }
 }
 
-
-/*just added because side contact menu was getting pushed down between 980-1060*/
-
-
-/*@media screen and (max-width: 1060px) {
+@media only screen and (max-width: 640px) {
     .maincontent {
-        width: 55%;
+        width: 90%;
     }
     .connect {
-        width: 35%;
+        width: 90%;
+        margin: 20px 0px 0px 0px;
     }
-
     .letterhead {
-        width: 25%;
+        width: 100%;
+        height: 70%;
+        position: relative;
+        left: 0px;
     }
-}*/
+    .topmenu {
+        clear: left;
+        float: left;
+        position: static;
+        width: 100%
+    }
+    li {
+        width: 33%;
+        text-align: center;
+    }
+}
