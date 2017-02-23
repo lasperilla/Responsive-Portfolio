@@ -199,6 +199,8 @@ li {
     color: #777777;
 }
 
+
+/*replacing portfolio code with superior code from homework 1 solution
 .projecttitle {
     color: #ffffff;
     padding: 10px;
@@ -210,14 +212,49 @@ li {
     height: 52px;
     width: 250px;
     background-color: #4AAAA5;
+}*/
+
+.projecttitle {
+    position: absolute;
+    bottom: 20px;
+    margin-bottom: 0;
+    padding: 15px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 30%;
+    font-weight: 300;
+    background: #4aaaa5;
+    border-bottom: 0;
+    height: 20%;
 }
 
-.projectdiv {
+
+/*.projectdiv {
     position: relative;
     padding: 20px 0px 20px 0px;
     height: 210px;
     margin-right: 40px;
     float: left;
+}*/
+
+.projectdiv {
+    position: relative;
+    width: 45%;
+    overflow: auto;
+    float: left;
+    margin: 20px 0 25px;
+}
+
+.projectdiv:nth-child(even) {
+    margin-left: 10%;
+}
+
+.projectdiv img {
+    width: 100%;
+    height: auto;
+    border: 0 none;
+    /*  opacity: .8;*/
 }
 
 .contactheader {
@@ -275,6 +312,7 @@ input[type=submit] {
 
 
 /*just added because side contact menu was getting pushed down between 980-1060*/
+
 @media only screen and (max-width: 1060px) {
     .maincontent {
         width: 55%;
@@ -299,28 +337,54 @@ input[type=submit] {
         width: 25%;
         font-size: 15px;
     }
+    .projectdiv {
+        width: 100%
+    }
+    .projectdiv:nth-child(even) {
+        margin-left: 0;
+    }
+    .projecttitle {
+        font-size: 24px;
+        height: 20%;
+        line-height: 150%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .maincontent {
-        width: 90%;
+        width: 100%;
     }
     .connect {
-        width: 90%;
+        width: 100%;
         margin: 20px 0px 0px 0px;
     }
     .letterhead {
         width: 25%;
         font-size: 15px;
     }
+    .projectdiv {
+        width: 47%
+    }
+    .projectdiv:nth-child(even) {
+        margin-left: 6%;
+    }
+    .projecttitle {
+        font-size: 18px;
+        height: 20%;
+        line-height: 30%;
+    }
+
 }
 
 @media only screen and (max-width: 640px) {
+    .wrapper {
+        padding: 20px;
+    }
     .maincontent {
-        width: 90%;
+        width: 100%;
     }
     .connect {
-        width: 90%;
+        width: 100%;
         margin: 20px 0px 0px 0px;
     }
     .letterhead {
@@ -338,5 +402,16 @@ input[type=submit] {
     li {
         width: 33%;
         text-align: center;
+    }
+    .projectdiv {
+        width: 100%
+    }
+    .projectdiv:nth-child(even) {
+        margin-left: 0;
+    }
+    .projecttitle {
+        font-size: 24px;
+        height: 20%;
+        line-height: 150%;
     }
 }
