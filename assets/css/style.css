@@ -320,11 +320,11 @@ input[type=submit] {
     .connect {
         width: 35%;
     }
-    .letterhead {
+/*    .letterhead {
         width: 25%;
         font-size: 15px;
     }
-}
+}*/
 
 @media only screen and (max-width: 960px) {
     .maincontent {
@@ -359,7 +359,7 @@ input[type=submit] {
         margin: 20px 0px 0px 0px;
     }
     .letterhead {
-        width: 25%;
+        width: 33%;
         font-size: 15px;
     }
     .projectdiv {
